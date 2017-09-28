@@ -1,0 +1,29 @@
+<head>
+        <script>
+    function Sort() {
+        var input = document.getElementById("words").value;
+        // split animals by comma & store it in an array
+        var array = input.split(', ');
+            alert(input);
+        // sort array of words alphabetically
+        array.sort();
+        // loop through the array , starting from i = 1 to 5 
+        for (var i = 0; i<5; i++) {
+            document.write(array[i]);
+            }
+            alert(array);
+        }
+            // use document object to write animal name of the web page based upon ur id attribute (words)
+    
+        </script>
+    </head>
+    <body>
+        <h1>
+            Words in Alphabetical Order
+        </h1>
+        <button id="add" onclick="Sort()">
+            Button
+        </button>
+        <input type="text" id="words"/>
+    
+    </body>
