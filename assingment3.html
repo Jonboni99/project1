@@ -1,0 +1,24 @@
+<head>
+        <script>
+    
+            function Sort() {
+                var input = document.getElementById("add").value;
+                var array = input.split(', ');
+                alert(input);
+                array.sort();
+                alert(array);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>
+            Animals
+        </h1>
+        <ul id="ani">
+            <li></li>
+        </ul>
+        <button id="butt" onclick="Sort()">
+            Add
+        </button>
+        <input id="add" type="text">
+    </body>
